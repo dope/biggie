@@ -2,6 +2,7 @@ Biggie
 ======
 
 A simplistic jQuery toggle menu.
+View it live: [Here](http://joey.so/biggie)
 
 # Getting Started
 Add the markup
