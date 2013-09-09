@@ -8,15 +8,24 @@ View it live: [Here](http://joey.so/biggie)
 Link the files (biggie.css & biggie.js) & Add the markup
 
 ```
-<nav>
+<nav class="mainNavigation">
+     <h5 class="logo">Biggie</h5>
+
     <ul>
-        <li><a class="active" href="#">Biggie</a></li>
-        <li><a href="#">Menu item</a></li>
-        <li><a href="#">Menu item</a></li>
-        <li><a href="http://lifes.gd">Life's Good</a></li>
-        <li><a href="http://twitter.com/joericho">@joericho</a></li>
+        <li><a href="#">Menu item</a>
+        </li>
+        <li><a href="#">Menu item</a>
+        </li>
+        <li><a href="http://github.com/dope/biggie">GitHub</a>
+        </li>
+        <li><a href="https://github.com/dope/biggie/archive/master.zip">Download</a>
+        </li>
+        <li><a href="http://twitter.com/joericho">@joericho</a>
+        </li>
     </ul>
     
-    <i class="nav-btn glyph-list-white"></i>
+    <div class="nav-btn"> 
+        <i class="glyph-list-white"></i>
+    </div>
 </nav>
 ```
