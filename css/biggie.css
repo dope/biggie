@@ -149,14 +149,24 @@ h1 > i {
     height:60px;
 }
 
-.toggle {
+nav.toggle {
    height: 100%;
 }
 
+.logo {
+    display:inline-block;
+    color:#fff;
+    width:30%;
+    padding:19px;
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing: 1px;
+}
+
 .mainNavigation > ul {
-    float:right;
-    width:70%;
+    width:69.7%;
     text-align: right;
+    display:inline-block;
 }
 
 .mainNavigation > ul > li {
@@ -168,16 +178,6 @@ h1 > i {
     font-weight:300;
     display:block;
     padding:19px;
-}
-
-.logo {
-    float:left;
-    color:#fff;
-    width:30%;
-    padding:19px;
-    text-transform: uppercase;
-    font-weight:600;
-    letter-spacing: 1px;
 }
 
 .mainNavigation > ul > li > a:hover {
@@ -219,7 +219,7 @@ h1 > i {
 
     .mainNavigation > ul > li {
         display:block;
-    } 
+    }
 
     .mainNavigation > ul > li > a:hover {
         color:#fff;
@@ -290,6 +290,16 @@ h1 > i {
            -moz-background-size: cover;
              -o-background-size: cover;
                 background-size: cover;
+    }
+
+    .logo {
+      width:20%;
+      display:inline-block;
+    }
+    .mainNavigation > ul {
+        width:70%;
+        display:inline-block;
+        text-align: right;
     }
 
     h1 {
