@@ -1,0 +1,299 @@
+/*
+*
+* Biggie v1
+* Copyright 2013, Joe Richardson
+* joey.so/biggie
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*
+*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+  -webkit-transition: all 0.1s ease-in-out;
+     -moz-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+label,
+select,
+button,
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] input[type="button"] {
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+     -moz-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+* {
+  font-size:100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::selection {
+  background: #ffc500;
+  color:#fff;
+}
+
+::-moz-selection {
+  background: #ffc500; 
+  color:#fff;
+}
+
+ol, ul { 
+  list-style: none;
+}
+
+body {
+    font:17px "Source Sans Pro";
+    background: url(../img/biggie.jpg) no-repeat center center fixed;
+    background-position:0px 70px;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+[class*="glyph-"] {
+  background: url('../img/icons.svg');
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+[class*="glyph-"]:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+}
+
+.glyph-list {
+  background-position: 0 -60px;
+}
+
+.glyph-list-white {
+  background-position: 0 -150px;
+}
+
+.glyph-right {
+  background-position: -120px -30px;
+}
+
+h1 {
+    position:absolute;
+    bottom:0;
+    padding:70px;
+    font-size:40px;
+    font-weight:300;
+    color:#777;
+}
+
+h1 > i {
+    margin-top:22px;
+    opacity:0.5;
+}
+
+.mainNavigation {
+    position:relative;
+    background:#222;
+    height:60px;
+}
+
+.toggle {
+   height: 100%;
+}
+
+.mainNavigation > ul {
+    float:right;
+    width:70%;
+    text-align: right;
+}
+
+.mainNavigation > ul > li {
+    display:inline-block;
+}
+
+.mainNavigation > ul > li > a,a:visited {
+    color:#777;
+    font-weight:300;
+    display:block;
+    padding:19px;
+}
+
+.logo {
+    float:left;
+    color:#fff;
+    width:30%;
+    padding:19px;
+    text-transform: uppercase;
+    font-weight:600;
+    letter-spacing: 1px;
+}
+
+.mainNavigation > ul > li > a:hover {
+    color:#fff;
+}
+
+.nav-btn {
+    position:absolute;
+    top:0px;
+    right:0px;
+    padding:20px;
+    display:none;
+}
+
+ /* Landscape and down
+===============================*/
+@media (max-width: 480px) {
+    body {
+        background: url(../img/biggie-iphone.jpg) no-repeat center center fixed;
+        background-position:0px 60px;
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+    }
+
+    h1 {
+        display:none;
+    }
+
+    .nav-btn {
+        display:block;
+    }
+
+    .mainNavigation {
+        height:60px;
+        overflow:hidden;
+    }
+
+    .mainNavigation > ul > li {
+        display:block;
+    } 
+
+    .mainNavigation > ul > li > a:hover {
+        color:#fff;
+        background:rgba(0,0,0,.3);
+        border-radius:4px;
+    }
+
+    .mainNavigation > ul {
+        text-align: left;
+    }
+
+    .mainNavigation > ul, .logo {
+        width:100%;
+    }
+}
+
+/* Landscape to Tablet Portrait
+===============================*/
+@media (min-width: 481px) and (max-width: 800px) {
+    body {
+        background: url(../img/biggie-port.png) no-repeat center center fixed;
+        background-position:0px 60px;
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+    }
+
+    .nav-btn {
+        display:block;
+    }
+
+    h1 {
+        display:none;
+    }
+
+    .mainNavigation {
+        height:60px;
+        overflow:hidden;
+    }
+
+    .mainNavigation > ul > li {
+        display:block;
+    } 
+
+    .mainNavigation > ul > li > a:hover {
+        color:#fff;
+        background:rgba(0,0,0,.3);
+        border-radius:4px;
+    }
+
+    .mainNavigation > ul {
+        text-align: left;
+    }
+
+    .mainNavigation > ul, .logo {
+        width:100%;
+    }
+}
+
+/* Landscape Tablet to Desktop
+===============================*/
+@media (min-width: 801px) and (max-width: 1100px) {
+    body {
+        background: url(../img/biggie-ipad.jpeg) no-repeat center center fixed;
+        background-position:0px 60px;
+        -webkit-background-size: cover;
+           -moz-background-size: cover;
+             -o-background-size: cover;
+                background-size: cover;
+    }
+
+    h1 {
+        display:none;
+    }
+
+}
