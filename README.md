@@ -12,15 +12,20 @@ Link the files (biggie.css & biggie.js) & Add the markup
      <h5 class="logo">Biggie</h5>
 
     <ul>
-        <li><a href="#">Menu item</a>
+        <li>
+          <a href="#">Menu item</a>
         </li>
-        <li><a href="#">Menu item</a>
+        <li>
+          <a href="#">Menu item</a>
         </li>
-        <li><a href="http://github.com/dope/biggie">GitHub</a>
+        <li>
+          <a href="http://github.com/dope/biggie">GitHub</a>
         </li>
-        <li><a href="https://github.com/dope/biggie/archive/master.zip">Download</a>
+        <li>
+          <a href="https://github.com/dope/biggie/archive/master.zip">Download</a>
         </li>
-        <li><a href="http://twitter.com/joericho">@joericho</a>
+        <li>
+          <a href="http://twitter.com/joericho">@joericho</a>
         </li>
     </ul>
     
