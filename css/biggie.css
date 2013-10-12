@@ -8,16 +8,7 @@
 *
 */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
+nav {
   display: block;
   -webkit-transition: all 0.1s ease-in-out;
      -moz-transition: all 0.1s ease-in-out;
@@ -28,23 +19,6 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-}
-
-label,
-select,
-button,
-input[type="submit"],
-input[type="radio"],
-input[type="checkbox"] input[type="button"] {
-  cursor: pointer;
-  -webkit-transition: all 0.1s ease-in-out;
-     -moz-transition: all 0.1s ease-in-out;
-          transition: all 0.1s ease-in-out;
 }
 
 a,
@@ -70,16 +44,6 @@ a:hover {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-::selection {
-  background: #ffc500;
-  color:#fff;
-}
-
-::-moz-selection {
-  background: #ffc500; 
-  color:#fff;
 }
 
 ol, ul { 
@@ -143,6 +107,13 @@ h1 > i {
     opacity:0.5;
 }
 
+/* Clearfix */
+nav:after {
+    content: "";
+    display: table; 
+    clear: both;
+}
+
 .mainNavigation {
     position:relative;
     background:#222;
@@ -154,7 +125,7 @@ nav.toggle {
 }
 
 .logo {
-    display:inline-block;
+    float:left;
     color:#fff;
     width:30%;
     padding:19px;
@@ -166,7 +137,7 @@ nav.toggle {
 .mainNavigation > ul {
     width:69.7%;
     text-align: right;
-    display:inline-block;
+    float:right;
 }
 
 .mainNavigation > ul > li {
@@ -224,7 +195,6 @@ nav.toggle {
     .mainNavigation > ul > li > a:hover {
         color:#fff;
         background:rgba(0,0,0,.3);
-        border-radius:4px;
     }
 
     .mainNavigation > ul {
@@ -268,7 +238,6 @@ nav.toggle {
     .mainNavigation > ul > li > a:hover {
         color:#fff;
         background:rgba(0,0,0,.3);
-        border-radius:4px;
     }
 
     .mainNavigation > ul {
@@ -293,13 +262,14 @@ nav.toggle {
     }
 
     .logo {
-      width:20%;
-      display:inline-block;
+      width:25%;
+      float:left;
     }
     .mainNavigation > ul {
-        width:70%;
+        width:75%;
         display:inline-block;
-        text-align: right;
+        float:right;
+
     }
 
     h1 {
